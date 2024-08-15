@@ -73,6 +73,42 @@
             margin: 0;
             color: #333333;
         }
+               .progress-text {
+            color: red;
+            font-size: 36px;
+            font-weight: bold;
+            transition: color 1.5s ease-in-out;
+            animation: colorChange 3s infinite alternate;
+        }
+
+        @keyframes colorChange {
+            50% {
+                color: red;
+            }
+            100% {
+                color: blue;
+            }
+        }
+
+        .ellipsis::after {
+            content: ' .';
+            animation: dots 1.5s steps(5, end) infinite;
+        }
+
+        @keyframes dots {
+            0%, 20% {
+                content: ' .';
+            }
+            40% {
+                content: ' ..';
+            }
+            60% {
+                content: ' ...';
+            }
+            80%, 100% {
+                content: '';
+            }
+        }
     </style>
 </head>
 
@@ -88,7 +124,8 @@
         <a href="https://kuntaafrika.systeme.io/kuntafrika_sanitary_solutions?fbclid=PAZXh0bgNhZW0CMTEAAabuNC94jJ_LVzHroK5gFGhnZFSNY3pJxe6OonRy68DZSiaxVDk1s7Q4o-w_aem_MsqKipZ1jDfp7KsQZVCAKA">Our Services</a>
         <a href="Contact-Us.html">Contact Us</a>
     </nav>
-    <p Style="color:red;">On progress.....!  <br> >Please wait a server is processing </p>
+    <p class="progress-text">On progress.....!  <br> >Please wait a server is processing<span class="ellipsis"></span></p>
+
 
     <!-- Add more content here -->
 
