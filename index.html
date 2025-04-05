@@ -8,6 +8,14 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
+  * {
+  box-sizing: border-box;
+}
+body, html {
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+   } 
     .hero-pattern {
       background-color: #1e5631;
       background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2315421f' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
@@ -587,43 +595,139 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-green-900 text-white py-12">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
-        <div>
-          <h3 class="font-bold text-xl mb-4 flex items-center">
-            <i class="fas fa-dna mr-2 text-green-300"></i> Biology E-LAB
-          </h3>
-          <p class="text-green-100 mb-4">Your comprehensive resource hub for biology education and study materials.</p>
-          <div class="flex space-x-4">
-            <a href="#" class="text-blue-600 hover:text-white transition">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.instagram.com/nash_rify?igsh=MXQza3NqdGEyaGNnaA==" class="text-red-600 hover:text-white transition">
-              <i class="fab fa-instagram"></i>
-            <a href="https://wa.me/qr/GRRFDVDECUP3M1" class="text-green-300 hover:text-white transition">
-              <i class="fab fa-whatsapp"></i>
-            </a>
-<a href="mailto:info.natlabs@gmail.com" class="text-red-600 hover:text-white transition">
-  <i class="fas fa-envelope"></i>
-</a>          </div>
+ 
+      <footer class="bg-green-900 text-white py-12">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Main footer content -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+      <!-- Company info -->
+      <div>
+        <h3 class="font-bold text-xl mb-4 flex items-center">
+          <i class="fas fa-dna mr-2 text-green-300"></i> Biology E-LAB
+        </h3>
+        <p class="text-green-100 mb-4">Your comprehensive resource hub for biology education and study materials.</p>
+        <div class="flex space-x-4 mb-4">
+          <a href="#" class="text-green-300 hover:text-white transition" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/nash_rify?igsh=MXQza3NqdGEyaGNnaA==" class="text-green-300 hover:text-white transition" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/qr/GRRFDVDECUP3M1" class="text-green-300 hover:text-white transition" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="mailto:info.natlabs@gmail.com" class="text-green-300 hover:text-white transition" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
         </div>
-
-        <div>
-          <h4 class="font-bold mb-4">Resources</h4>
-          <ul class="space-y-2">
-            <li><a href="#" class="text-green-100 hover:text-white transition">All Notes</a></li>
-            <li><a href="#" class="text-green-100 hover:text-white transition">Study Guides</a></li>
-            <li><a href="#" class="text-green-100 hover:text-white transition">Practice Tests</a></li>
-            <li><a href="#" class="text-green-100 hover:text-white transition">Video Tutorials</a></li>
-            <li><a href="#" class="text-green-100 hover:text-white transition">Diagrams & Charts</a></li>
-          </ul>
+        <!-- Subscribe form -->
+        <div class="mt-4">
+          <p class="text-sm text-green-200 mb-2">Subscribe to our newsletter:</p>
+          <form class="flex">
+            <input type="email" placeholder="Your email" class="px-3 py-2 text-gray-900 text-sm rounded-l w-full focus:outline-none">
+            <button type="submit" class="bg-green-600 hover:bg-green-500 px-3 py-2 rounded-r text-sm transition">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
         </div>
+      </div>
 
-        <div>
-          <h4 class="font-bold mb-4">Quick Links</h4>
-          <ul class="space-y-2">
-            <li><a href="#" class="text-green-100 hover:text-white transition">About Us</a></li>
-            <li><a href="#" class="text-green-100 hover:text-white transition">Contact Us</a></li>
-            <li><a href="#" class="text-green-100 hover:text-white transition">FAQ</a></li>
-            <li><a href="#" class="text-green-100 hover:text-white transition">Privacy Policy</a></li>
+      <!-- Resources -->
+      <div>
+        <h4 class="font-bold mb-4 text-green-300">Resources</h4>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-green-100 hover:text-white transition flex items-center">
+            <i class="fas fa-chevron-right text-xs mr-2 text-green-300"></i>All Notes
+          </a></li>
+          <li><a href="#" class="text-green-100 hover:text-white transition flex items-center">
+            <i class="fas fa-chevron-right text-xs mr-2 text-green-300"></i>Study Guides
+          </a></li>
+          <li><a href="#" class="text-green-100 hover:text-white transition flex items-center">
+            <i class="fas fa-chevron-right text-xs mr-2 text-green-300"></i>Practice Tests
+          </a></li>
+          <li><a href="#" class="text-green-100 hover:text-white transition flex items-center">
+            <i class="fas fa-chevron-right text-xs mr-2 text-green-300"></i>Video Tutorials
+          </a></li>
+          <li><a href="#" class="text-green-100 hover:text-white transition flex items-center">
+            <i class="fas fa-chevron-right text-xs mr-2 text-green-300"></i>Diagrams & Charts
+          </a></li>
+        </ul>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="font-bold mb-4 text-green-300">Quick Links</h4>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-green-100 hover:text-white transition flex items-center">
+            <i class="fas fa-chevron-right text-xs mr-2 text-green-300"></i>About Us
+          </a></li>
+          <li><a href="#" class="text-green-100 hover:text-white transition flex items-center">
+            <i class="fas fa-chevron-right text-xs mr-2 text-green-300"></i>Contact Us
+          </a></li>
+          <li><a href="#" class="text-green-100 hover:text-white transition flex items-center">
+            <i class="fas fa-chevron-right text-xs mr-2 text-green-300"></i>FAQ
+          </a></li>
+          <li><a href="#" class="text-green-100 hover:text-white transition flex items-center">
+            <i class="fas fa-chevron-right text-xs mr-2 text-green-300"></i>Privacy Policy
+          </a></li>
+          <li><a href="#" class="text-green-100 hover:text-white transition flex items-center">
+            <i class="fas fa-chevron-right text-xs mr-2 text-green-300"></i>Terms of Service
+          </a></li>
+        </ul>
+      </div>
+
+      <!-- Contact & Hours -->
+      <div>
+        <h4 class="font-bold mb-4 text-green-300">Contact Info</h4>
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <i class="fas fa-map-marker-alt mt-1 mr-3 text-green-300"></i>
+            <span class="text-green-100">123 Education Avenue, Science Building, Suite 101</span>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-phone mt-1 mr-3 text-green-300"></i>
+            <span class="text-green-100">+1 (555) 123-4567</span>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-envelope mt-1 mr-3 text-green-300"></i>
+            <a href="mailto:info.natlabs@gmail.com" class="text-green-100 hover:text-white transition">info.natlabs@gmail.com</a>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-clock mt-1 mr-3 text-green-300"></i>
+            <div>
+              <p class="text-green-100">Mon-Fri: 9am - 5pm</p>
+              <p class="text-green-100">Sat: 10am - 2pm</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-green-800 pt-6 mt-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <!-- Copyright -->
+        <p class="text-green-200 text-sm mb-4 md:mb-0">
+          © 2025 Biology E-LAB. All rights reserved.
+        </p>
+        
+        <!-- Additional links -->
+        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+          <a href="#" class="text-green-200 hover:text-white text-sm transition">Careers</a>
+          <a href="#" class="text-green-200 hover:text-white text-sm transition">Support</a>
+          <a href="#" class="text-green-200 hover:text-white text-sm transition">Blog</a>
+          <a href="#" class="text-green-200 hover:text-white text-sm transition">Educational Partners</a>
+        </div>
+      </div>
+      
+      <!-- Back to top button -->
+      <div class="text-center mt-6">
+        <a href="#top" class="inline-block bg-green-800 hover:bg-green-700 text-white px-4 py-2 rounded-full transition">
+          <i class="fas fa-arrow-up mr-2"></i>Back to Top
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body >
+</html>
